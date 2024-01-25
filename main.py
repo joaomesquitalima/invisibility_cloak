@@ -44,7 +44,7 @@ while True:
     r = cv2.bitwise_and(r, mask)
     part2 = cv2.merge((b, g, r))
 
-    final = cv2.bitwise_or(part1,part2)
+    final = cv2.add(part1,part2)
 
     cv2.imshow("capa do harry", final)
 
